@@ -9,7 +9,7 @@
 #   Check Package:             'Ctrl + Shift + E'
 #   Test Package:              'Ctrl + Shift + T'
 
-windowsFonts(Times=windowsFont("Times New Roman"))
+windowsFonts(Times=windowsFont("TT Times New Roman"))
 
 theme_sleek <- function(base_size = 12, base_family = "Times") {
   half_line <- base_size/2
