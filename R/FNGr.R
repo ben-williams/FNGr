@@ -49,3 +49,9 @@ tickr <- function(
                           !!VAR, "")) %>%
     select(breaks = UQ(VAR), labels)
 }
+
+# Mode
+mode <- function(x) {
+  uniqv <- unique(x)
+  as.numeric(uniqv[which.max(tabulate(match(x, uniqv)))])
+}
