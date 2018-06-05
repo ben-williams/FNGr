@@ -10,9 +10,10 @@ Then load the package per usual
 library(FNGr)
 library(tidyverse)
 library(scales)
+windowsFonts(Times=windowsFont("TT Times New Roman"))
 ```
 
-First set the "universal" figure theme to `theme_sleek()`
+First set the "universal" figure theme to `theme_sleek()` (based off of https://github.com/seananderson/ggsidekick)
 
 ```{r}
 theme_set(theme_sleek())
