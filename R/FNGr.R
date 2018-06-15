@@ -9,11 +9,12 @@
 #   Check Package:             'Ctrl + Shift + E'
 #   Test Package:              'Ctrl + Shift + T'
 
-windowsFonts(Times=windowsFont("TT Times New Roman"))
+
 
 theme_sleek <- function(base_size = 12, base_family = "Times") {
+  windowsFonts(Times=windowsFont("TT Times New Roman"))
   half_line <- base_size/2
-  theme_light(base_size = 12, base_family = "Times") +
+  theme_light(base_size = base_size, base_family = base_family) +
     theme(
       panel.grid.major = element_blank(),
       panel.grid.minor = element_blank(),
