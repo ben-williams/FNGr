@@ -12,9 +12,12 @@
 
 
 theme_sleek <- function(base_size = 12, base_family = "Times") {
+
   windowsFonts(Times=windowsFont("TT Times New Roman"))
+
   half_line <- base_size/2
-  theme_light(base_size = base_size, base_family = base_family) +
+
+  theme_set(theme_light(base_size = base_size, base_family = base_family) +
     theme(
       panel.grid.major = element_blank(),
       panel.grid.minor = element_blank(),
@@ -33,6 +36,7 @@ theme_sleek <- function(base_size = 12, base_family = "Times") {
       #plot.title = element_text(colour = "grey30"),#, size = rel(1)
       #plot.subtitle = element_text(colour = "grey30")#, size = rel(.85)
     )
+  )
 }
 
 # Depends on dplyr
